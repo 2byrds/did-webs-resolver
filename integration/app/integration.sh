@@ -166,7 +166,7 @@ function serveDidAndKeriEvents() {
         # if [ "${prompt}" == "y" ]; then
         #     read -p "Name the identity [searcher]: " runGenDid
         # fi
-        dkr did webs service --config-dir=./scripts --config-file=dkr.json &
+        dkr did webs service --config-dir=./scripts --config-file=dkr_serve.json &
         servePid=$!
         sleep 5
         echo "Serving dids and keri events"
